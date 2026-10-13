@@ -1,15 +1,10 @@
 <script setup lang="ts">
-// Step 2 of 2. Uses layouts/auth.vue (no sidebar / topbar / footer)
 definePageMeta({ layout: 'auth' })
 
 useSeoMeta({ title: 'Verify Your Email | Vortex' })
 
-// Saved by the sign up page (step 1)
 const email = useState<string>('signup-email', () => '')
 
-// ---- the 4 boxes ----
-// type="number" makes each box a number (or undefined while empty).
-// Number.isInteger (not Boolean) so the digit 0 counts as filled too.
 const code = ref<(number | undefined)[]>([])
 const canVerify = computed(() => code.value.filter(digit => Number.isInteger(digit)).length === 4)
 
@@ -26,7 +21,6 @@ async function onVerify() {
   loading.value = false
 }
 
-// ---- resend countdown ----
 const RESEND_SECONDS = 25
 const remaining = ref(RESEND_SECONDS)
 let timer: ReturnType<typeof setInterval> | undefined
@@ -43,7 +37,6 @@ function startTimer() {
 onMounted(startTimer)
 onBeforeUnmount(() => clearInterval(timer))
 
-// 25 -> "00:25"
 const clock = computed(() => {
   const minutes = String(Math.floor(remaining.value / 60)).padStart(2, '0')
   const seconds = String(remaining.value % 60).padStart(2, '0')
@@ -59,7 +52,6 @@ function resend() {
 
 <template>
   <AuthShell>
-    <!-- mt-16: pushes the text AND everything under it down on mobile (desktop unchanged) -->
     <header class="mt-24 space-y-3 text-center lg:mt-0 lg:space-y-2">
       <p class="text-sm lg:text-xs">
         Step <strong class="font-semibold">2</strong> of <strong class="font-semibold">2</strong>
@@ -75,7 +67,6 @@ function resend() {
     </header>
 
     <form class="mt-8 space-y-5" @submit.prevent="onVerify">
-      <!-- 4 dark boxes, numbers only. You can paste a code, it fills all the boxes. -->
       <UPinInput v-model="code" :length="4" type="number" otp autofocus variant="none" placeholder=""
         aria-label="Verification code" :ui="{
           root: 'grid w-full grid-cols-4 gap-3',

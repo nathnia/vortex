@@ -1,8 +1,3 @@
-// "Exactly N indicator bars" for a UCarousel, no matter how many scroll steps it has.
-// Auto-imported by Nuxt. Used by TrendingGames and DetailHero.
-//
-//   const carousel = useTemplateRef('carousel')
-//   const { dotCount, activeDot, goToDot } = useCarouselDots(carousel)
 interface EmblaLike {
   scrollSnapList: () => number[]
   selectedScrollSnap: () => number

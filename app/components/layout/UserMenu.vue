@@ -1,7 +1,5 @@
 <script setup lang="ts">
-// Right side of the topbars.
-//   variant="desktop" -> bell + divider + avatar + name
-//   variant="mobile"  -> avatar + caret only
+
 withDefaults(defineProps<{ variant?: 'desktop' | 'mobile' }>(), { variant: 'desktop' })
 
 const user = useCurrentUser()

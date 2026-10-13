@@ -4,7 +4,6 @@ import { useIsMobile } from '~/composables/useIsMobile'
 const route = useRoute()
 const allGames = useDiscoverGames()
 
-// From the hero search (?q=) and the category cards (?category=)
 const query = computed(() => String(route.query.q ?? '').trim().toLowerCase())
 const category = computed(() => String(route.query.category ?? '').trim().toLowerCase())
 
@@ -19,12 +18,10 @@ const orderOptions: { key: Order, label: string }[] = [
 ]
 const orderLabel = computed(() => orderOptions.find(option => option.key === order.value)?.label)
 
-// Display Options (2 views, same as the design)
-// 'wide'   = wide cards in the 2-3-2 pattern (1st button, default)
-// 'poster' = tall cards, 4 per row (2nd button)
+// Display Options
 const view = ref<'poster' | 'wide'>('wide')
 
-// Mobile (below md): 3 wide cards per block (4 poster cards), like the mobile design
+// Mobile
 const isMobile = useIsMobile('(max-width: 767px)')
 
 // ---- filter + sort ----
@@ -58,9 +55,6 @@ const filtered = computed(() => {
   return list
 })
 
-// ---- pages: two blocks per page, the Upcoming banner sits between them ----
-// desktop: poster = 2 rows x 4 = 8 per block, wide = 2-3-2 = 7 per block
-// mobile: wide = 3, poster = 4
 const blockSize = computed(() => {
   if (isMobile.value) return view.value === 'poster' ? 4 : 3
   return view.value === 'poster' ? 8 : 7
@@ -83,7 +77,7 @@ const blocks = computed(() => {
   return result
 })
 
-// Wide view: rows of 2 / 3 / 2 cards on a 6-column grid
+// Wide view
 const SPANS = [
   'md:col-span-3', 'md:col-span-3',
   'md:col-span-2', 'md:col-span-2', 'md:col-span-2',
@@ -112,7 +106,7 @@ const platformItems = computed(() =>
         : platforms.value.filter(p => p !== key)
     },
     onSelect(event: Event) {
-      event.preventDefault() // keep the menu open while picking
+      event.preventDefault()
     },
   })),
 )
@@ -170,7 +164,7 @@ const viewIdle = 'bg-primary text-neutral-900 hover:bg-primary/75'
       No games found. Try another search or filter.
     </p>
 
-    <!-- cards: block 1, Upcoming banner, block 2 -->
+    <!-- cards -->
     <template v-for="(block, blockIndex) in blocks" :key="blockIndex">
       <div class="grid gap-4" :class="view === 'poster' ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-1 md:grid-cols-6'">
         <GameCard
@@ -183,11 +177,10 @@ const viewIdle = 'bg-primary text-neutral-900 hover:bg-primary/75'
         />
       </div>
 
-      <!-- negative margins = edge to edge, like the design -->
       <DiscoverUpcoming v-if="blockIndex === 0 && blocks.length > 1" class="-mx-4 my-8 md:-mx-8" />
     </template>
 
-    <!-- pagination (hidden when everything fits on one page) -->
+    <!-- pagination -->
     <div v-if="filtered.length > perPage" class="mt-8 flex justify-center">
       <UPagination
         v-model:page="page"

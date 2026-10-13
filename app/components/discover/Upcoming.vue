@@ -11,7 +11,6 @@ function watchTrailer() {
 </script>
 
 <template>
-  <!-- Full-width purple banner. The parent uses negative margins so it touches both edges. -->
   <section class="relative bg-nav-active px-4 py-10 md:px-16">
     <div class="mx-auto max-w-5xl">
       <h2 class="text-xl font-semibold max-md:text-2xl">
@@ -68,7 +67,6 @@ function watchTrailer() {
       </UCarousel>
     </div>
 
-    <!-- plain arrows on both edges -->
     <button
       type="button"
       aria-label="Previous game"

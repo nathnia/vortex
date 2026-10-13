@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Uses layouts/auth.vue (no sidebar / topbar / footer)
 definePageMeta({ layout: 'auth' })
 
 useSeoMeta({ title: 'Sign Up | Vortex' })
@@ -14,7 +13,6 @@ const state = reactive({
 const showPassword = ref(false)
 const loading = ref(false)
 
-// Simple checks, no extra library. Each error shows under its own field.
 function validate(values: typeof state) {
   const errors: { name: string, message: string }[] = []
   if (values.username.trim().length < 3) {
@@ -32,13 +30,11 @@ function validate(values: typeof state) {
   return errors
 }
 
-// Same look for all 3 inputs (dark grey box like the design)
 const inputUi = {
   leadingIcon: 'text-white!',
   base: 'bg-neutral-700 rounded-lg border border-neutral-600 py-2 text-base text-white lg:py-2.5 lg:text-sm placeholder:text-neutral-300',
 }
 
-// The verify page (step 2) reads this to show your email
 const signupEmail = useState<string>('signup-email', () => '')
 
 async function onSubmit() {
@@ -53,7 +49,6 @@ async function onSubmit() {
 
 <template>
   <AuthShell>
-    <!-- mt-16: pushes the text AND everything under it down on mobile so the picture shows (desktop unchanged) -->
     <header class="mt-16 space-y-3 text-center lg:mt-0 lg:space-y-2">
       <p class="text-sm lg:text-xs">
         Step <strong class="font-semibold">1</strong> of <strong class="font-semibold">2</strong>

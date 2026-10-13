@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// "Or sign up with" line + Google / Facebook buttons. Used by sign up and sign in.
 defineProps<{ label: string }>()
 
 function connect(provider: 'google' | 'facebook') {

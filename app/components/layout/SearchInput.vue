@@ -1,7 +1,5 @@
 <script setup lang="ts">
-// Search box used by the topbars. Enter = go to /discover?q=...
-//   variant="desktop" -> fixed width, for the lg+ topbar
-//   variant="mobile"  -> full width, for the grey strip under the mobile bar
+
 withDefaults(defineProps<{ variant?: 'desktop' | 'mobile' }>(), { variant: 'desktop' })
 
 const query = ref('')

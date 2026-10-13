@@ -4,8 +4,6 @@
 @theme static {
   --font-sans: 'Outfit', sans-serif;
 
-  /* Pigment Indigo scale, taken from the Figma token sheet.
-     500, 700 and 950 are NOT in the sheet: me made them up, design not use them. */
   --color-pigment-50: #F3EAFB;
   --color-pigment-100: #E0CDF7;
   --color-pigment-200: #C29BEF;
@@ -41,7 +39,7 @@
   --color-nav-active: #290847;
 }
 
-/* Main color = color-bg-button-primary-default (#C29BEF), also in dark mode */
+/* Main color*/
 :root,
 .dark {
   --ui-primary: var(--color-pigment-200);

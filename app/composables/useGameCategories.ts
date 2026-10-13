@@ -1,10 +1,3 @@
-// Data for the "Search by Categories" carousel on the Discover page.
-// Auto-imported by Nuxt, so just call useGameCategories() anywhere.
-//
-// Images live in /public/images/categories/<slug>.webp
-// (export the card art from Figma WITHOUT the label and the fade)
-//
-// To add a category, copy one object and change the values.
 export function useGameCategories() {
   return [
     { slug: 'racing', name: 'Racing', image: '/images/categories/racing.webp' },

@@ -1,13 +1,9 @@
 <script setup lang="ts">
-// Shared page shell: desktop sidebar, mobile drawer, footer.
-// layouts/default, detail and discover only pick the topbar (slot "topbar")
-// and whether <main> has side padding (prop "padded").
 withDefaults(defineProps<{ padded?: boolean }>(), { padded: true })
 
 const mobileMenuOpen = ref(false)
 const route = useRoute()
 
-// Close the mobile drawer after navigating
 watch(() => route.fullPath, () => {
   mobileMenuOpen.value = false
 })
@@ -37,7 +33,6 @@ function openMenu() {
       </template>
     </USlideover>
 
-    <!-- flex-col + flex-1 on main = footer always sits at the bottom -->
     <div class="flex min-h-screen flex-col lg:pl-56">
       <slot name="topbar" :open-menu="openMenu" />
       <main class="flex-1 pb-12" :class="padded && 'px-4 md:px-8'">

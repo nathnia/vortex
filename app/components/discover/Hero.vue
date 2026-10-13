@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
 
-// Search text. Starts with ?q= so the search in the home topbar lands here filled in.
 const query = ref(String(route.query.q ?? ''))
 
 function submitSearch() {
@@ -16,8 +15,6 @@ function openFilter() {
 </script>
 
 <template>
-  <!-- Art: /public/images/discover/hero.webp (export from Figma WITHOUT the text,
-       but WITH the red glow and the dark fades: they are part of the image, not code). -->
   <section class="relative isolate overflow-hidden rounded-b-2xl bg-black">
     <NuxtImg
       src="/images/discover-hero.webp"
@@ -26,7 +23,6 @@ function openFilter() {
       fetchpriority="high"
       class="absolute inset-0 -z-10 size-full object-cover object-right"
     />
-    <!-- flat black overlay (not a gradient), a little darker so the text is easy to read -->
     <div class="absolute inset-0 -z-10 bg-black/25" />
 
     <div class="mx-auto flex min-h-88 max-w-4xl flex-col items-center justify-center gap-1.5 px-4 py-12 text-center max-md:min-h-136 md:min-h-104">

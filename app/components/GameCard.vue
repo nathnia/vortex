@@ -1,7 +1,5 @@
 <script setup lang="ts">
-// ONE card for the whole app: Home (Trending, Other Games) and Discover.
-//   variant="poster" -> tall card, hover = violet outline + glow   (Trending style)
-//   variant="wide"   -> wide card, hover = violet border           (Other Games style)
+
 const props = withDefaults(defineProps<{
   game: {
     slug: string
@@ -9,14 +7,12 @@ const props = withDefaults(defineProps<{
     platforms: string[]
     tags?: string[]
     image?: string
-    cover?: string // Trending uses "cover", the others use "image"
+    cover?: string 
   }
   variant?: 'wide' | 'poster'
   showTags?: boolean
   maxTags?: number
-  // Poster height. Options: aspect-3/4, aspect-2/3 (standard), aspect-3/5, aspect-4/7
   posterRatio?: string
-  // Wide height, e.g. 'h-48 sm:h-36 md:h-40'
   wideHeight?: string
 }>(), {
   variant: 'wide',
@@ -41,16 +37,14 @@ const wideClass
     class="relative block overflow-hidden rounded-xl bg-card transition"
     :class="variant === 'poster' ? [posterRatio, posterClass] : [wideHeight, wideClass]"
   >
-    <!-- 1. art -->
     <NuxtImg :src="image" :alt="game.title" class="absolute inset-0 size-full object-cover" />
 
-    <!-- 2. fade so text is readable -->
     <div
       class="absolute inset-0 bg-linear-to-t from-surface to-transparent"
       :class="variant === 'poster' ? 'via-surface/50' : 'via-surface/30'"
     />
 
-    <!-- POSTER: title, tags, then platform icons in a row -->
+    <!-- POSTER -->
     <div v-if="variant === 'poster'" class="absolute inset-x-0 bottom-0 space-y-2 p-3">
       <h3 class="text-base font-medium leading-tight">
         {{ game.title }}
@@ -71,7 +65,7 @@ const wideClass
       </ul>
     </div>
 
-    <!-- WIDE: title (+ tags) bottom-left, platform icons stacked on the right -->
+    <!-- WIDE -->
     <template v-else>
       <h3 class="absolute left-4 text-base font-medium" :class="tags.length ? 'bottom-12' : 'bottom-3'">
         {{ game.title }}

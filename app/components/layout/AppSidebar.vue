@@ -1,16 +1,13 @@
 <script setup lang="ts">
-// Phosphor icons. Inactive = "bold", active = "fill" (as in the design).
-// Only house-line confirmed from Figma. Check the other names.
+
 interface NavItem {
   label: string
   to: string
   icon: string
-  /** other route prefixes where this item should also look active */
   alsoActive?: string[]
 }
 
 const mainNav: NavItem[] = [
-  // Homepage stays lit on game detail pages (/games/<slug>)
   { label: 'Homepage', to: '/', icon: 'house-line', alsoActive: ['/games'] },
   { label: 'Discover', to: '/discover', icon: 'magnifying-glass' },
   { label: 'Reviews', to: '/reviews', icon: 'star' },
@@ -41,7 +38,6 @@ function signOut() {
   navigateTo('/')
 }
 
-// Text: weight 400, size from Figma "Font/Size/XS" (me use 16px, check variable in Figma)
 const linkBase = 'flex items-center gap-3 rounded-lg px-3 py-2.5 text-base font-normal text-neutral-300 transition hover:bg-white/5 hover:text-white'
 const linkActive = 'bg-nav-active text-white'
 </script>

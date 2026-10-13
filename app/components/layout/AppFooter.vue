@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Social icons use simple-icons: npm i @iconify-json/simple-icons
 const socials = [
   { label: 'YouTube', icon: 'i-simple-icons-youtube', href: 'https://youtube.com' },
   { label: 'X', icon: 'i-simple-icons-x', href: 'https://x.com' },
@@ -23,7 +22,7 @@ const legalLinks = [
 <template>
   <footer class="bg-pigment-900 px-4 py-12 text-white md:py-8">
     <div class="flex flex-col items-center gap-8 md:gap-6">
-      <!-- Group 1: socials + main links (mobile: stacked, desktop: one row) -->
+      <!-- Group 1 -->
       <div class="flex flex-col items-center gap-6 md:flex-row md:flex-wrap md:justify-center md:gap-x-10 md:gap-y-4">
         <ul class="flex items-center gap-8 md:gap-7">
           <li v-for="social in socials" :key="social.label">
@@ -48,9 +47,7 @@ const legalLinks = [
         </ul>
       </div>
 
-      <!-- Group 2: legal links + copyright.
-           Mobile: legal links first, copyright on its own line below.
-           Desktop: copyright first, then legal links (same as before). -->
+      <!-- Group 2 -->
       <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-xs">
         <li class="order-last w-full text-center font-medium md:order-first md:flex md:w-auto md:items-center md:gap-6">
           Copyright @2025 Vortex

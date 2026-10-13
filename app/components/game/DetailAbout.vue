@@ -3,7 +3,6 @@ import type { GameDetail, GameSpecs } from '~/types/game'
 
 const props = defineProps<{ game: GameDetail }>()
 
-// Spec lines in the order the design shows them. Empty values are skipped.
 const specLabels: [keyof GameSpecs, string][] = [
   ['os', 'OS'],
   ['processor', 'Processor'],
@@ -55,7 +54,6 @@ function specLines(specs: GameSpecs) {
       <h2 class="mb-3 text-lg font-semibold">
         System Requirements
       </h2>
-      <!-- 2 columns only on xl: the text column is narrow before that -->
       <div class="grid gap-6 xl:grid-cols-2">
         <div v-for="column in columns" :key="column.title">
           <h3 class="mb-3 text-sm font-semibold">

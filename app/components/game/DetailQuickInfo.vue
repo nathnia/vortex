@@ -3,12 +3,11 @@ import type { GameDetail } from '~/types/game'
 
 const props = defineProps<{ game: GameDetail }>()
 
-// Tags: show the first 4, the rest become the "+ N" chip (same rule as DetailHero)
+// Tags
 const MAX_TAGS = 4
 const visibleTags = computed(() => props.game.tags.slice(0, MAX_TAGS))
 const hiddenTags = computed(() => Math.max(props.game.tags.length - MAX_TAGS, 0))
 
-// Rows in the order the design shows them. Empty values are skipped.
 const items = computed(() => [
   { label: 'Platforms', value: props.game.platforms.map(p => platformLabels[p] ?? p).join(', ') },
   { label: 'Genre', value: props.game.genres?.join(', ') },

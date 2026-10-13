@@ -3,7 +3,6 @@ const emit = defineEmits<{ (e: 'toggle-menu'): void }>()
 </script>
 
 <template>
-  <!-- MOBILE (below lg): hamburger / logo (centered) / user. Every item h-8 + flex = same vertical center -->
   <div class="grid grid-cols-3 items-center border-b border-line px-5 py-3 md:px-9 lg:hidden">
     <button
       type="button"

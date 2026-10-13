@@ -7,7 +7,6 @@ const carousel = useTemplateRef('carousel')
 
 <template>
   <section>
-    <!-- Header: title + purple arrow buttons -->
     <div class="mb-4 flex items-center justify-between">
       <h2 class="text-lg font-medium">Latest Reviews</h2>
       <div class="flex gap-2">
@@ -38,11 +37,9 @@ const carousel = useTemplateRef('carousel')
       class="pb-8"
       :ui="carouselDotsUi"
     >
-      <!-- mobile values first, md: values = desktop (unchanged) -->
       <article
         class="grid w-full items-center gap-4 rounded-3xl bg-sidebar p-4 md:grid-cols-[1.3fr_1fr] md:gap-6 md:p-4"
       >
-        <!-- Left/top: game screenshot (mobile: almost square, desktop: 3:2) -->
         <div class="aspect-9/10 overflow-hidden rounded-xl bg-card md:aspect-3/2">
           <NuxtImg
             :src="item.image"
@@ -51,7 +48,6 @@ const carousel = useTemplateRef('carousel')
           />
         </div>
 
-        <!-- Right/bottom: review -->
         <div class="flex flex-col justify-center gap-3 px-1 pb-2 md:gap-4 md:px-0 md:pb-0">
           <div class="flex items-center gap-3">
             <span class="flex size-8 items-center justify-center rounded-lg bg-nav-active text-white md:size-10">
@@ -84,7 +80,6 @@ const carousel = useTemplateRef('carousel')
             </div>
           </div>
 
-          <!-- centered, like the design -->
           <NuxtLink
             :to="`/games/${item.slug}`"
             class="w-fit self-center text-xs text-pigment-200 hover:underline md:text-base"

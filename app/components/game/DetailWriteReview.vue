@@ -3,20 +3,16 @@ import type { GameDetail } from '~/types/game'
 
 const props = defineProps<{ game: GameDetail }>()
 
-// v-model:open from the parent (DetailReviews opens it from the "Add Review" button)
 const open = defineModel<boolean>('open', { default: false })
 
 const verdict = ref<'recommended' | 'not-recommended' | null>(null)
 const text = ref('')
 const showUsername = ref(false)
 
-// Banner on top: the first trailer thumbnail, or the poster when the game has no media
 const banner = computed(() => props.game.media[0]?.src ?? props.game.poster)
 
-// Submit stays disabled until a verdict is picked and something is written
 const canSubmit = computed(() => verdict.value !== null && text.value.trim().length > 0)
 
-// Start fresh every time the popup is closed
 watch(open, (isOpen) => {
   if (isOpen) return
   verdict.value = null

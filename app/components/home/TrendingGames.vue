@@ -14,13 +14,12 @@ const carousel = useTemplateRef<{
   }
 }>('carousel')
 
-// Always exactly 3 indicator bars, no matter how many scroll steps the carousel has
 const { dotCount, activeDot, goToDot } = useCarouselDots(carousel)
 </script>
 
 <template>
   <section>
-    <!-- Header: title + purple arrow buttons -->
+    <!-- Header -->
     <div class="mb-4 flex items-center justify-between">
       <h2 class="text-lg font-semibold">
         Trending Games
@@ -60,7 +59,6 @@ const { dotCount, activeDot, goToDot } = useCarouselDots(carousel)
         <GameCard :game="item" variant="poster" />
       </UCarousel>
 
-      <!-- Custom indicator: exactly 3 bars -->
       <div class="absolute inset-x-0 bottom-2 flex justify-center gap-2">
         <button
           v-for="n in dotCount"

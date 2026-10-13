@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Uses layouts/auth.vue (no sidebar / topbar / footer)
 definePageMeta({ layout: 'auth' })
 
 useSeoMeta({ title: 'Sign In | Vortex' })
@@ -13,7 +12,6 @@ const state = reactive({
 const showPassword = ref(false)
 const loading = ref(false)
 
-// Simple checks, no extra library. Each error shows under its own field.
 function validate(values: typeof state) {
   const errors: { name: string, message: string }[] = []
   if (!/^\S+@\S+\.\S+$/.test(values.email)) {
@@ -25,7 +23,6 @@ function validate(values: typeof state) {
   return errors
 }
 
-// Same look as the sign up inputs (dark grey box like the design)
 const inputUi = {
   leadingIcon: 'text-white!',
   base: 'bg-neutral-700 rounded-lg border border-neutral-600 py-2 text-base text-white lg:py-2.5 lg:text-sm placeholder:text-neutral-300',
@@ -42,7 +39,6 @@ async function onSubmit() {
 <template>
   <AuthShell image="/images/auth/sign-in.webp" title="Thousands of worlds are waiting!"
     subtitle="Jump back in and pick up where you left off.">
-    <!-- mt-16: pushes the text AND everything under it down on mobile so the picture shows (desktop unchanged) -->
     <header class="mt-16 space-y-2 px-8 lg:px-0 text-center lg:mt-0 lg:space-y-2">
       <h1 class="text-3xl font-semibold">
         Sign In
@@ -78,7 +74,6 @@ async function onSubmit() {
           </template>
         </UCheckbox>
 
-        <!-- TODO: link to the forgot password page when it exists -->
         <button type="button" class="text-sm text-pigment-200 hover:underline lg:text-xs">
           Forgot Password?
         </button>

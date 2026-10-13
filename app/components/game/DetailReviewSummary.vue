@@ -3,7 +3,6 @@ import type { GameReviewSummary } from '~/types/review'
 
 const props = defineProps<{ summary: GameReviewSummary }>()
 
-// 187210 -> "187k", 16211 -> "16k"
 function compact(count: number) {
   return count >= 1000 ? `${Math.round(count / 1000)}k` : String(count)
 }
@@ -25,7 +24,6 @@ const stats = computed(() => [
   },
 ])
 
-// DetailReviews listens to this and opens the "Write a Review" popup
 const emit = defineEmits<{ (e: 'add-review'): void }>()
 
 function addReview() {

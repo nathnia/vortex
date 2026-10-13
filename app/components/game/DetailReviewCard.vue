@@ -3,7 +3,6 @@ import type { GameReview } from '~/types/review'
 
 const props = defineProps<{ review: GameReview }>()
 
-// "2025-06-10" -> "Jun 10, 2025". The T00:00:00 keeps it on the same day in every timezone.
 const postedOn = computed(() =>
   new Date(`${props.review.postedAt}T00:00:00`).toLocaleDateString('en-US', {
     month: 'short',
@@ -12,12 +11,10 @@ const postedOn = computed(() =>
   }),
 )
 
-// Long reviews are cut to 3 lines with a "Show More" button
 const LONG_TEXT = 260
 const isLong = computed(() => props.review.text.length > LONG_TEXT)
 const expanded = ref(false)
 
-// "Was this review helpful?" Local only for now (resets on refresh).
 const vote = ref<'up' | 'down' | null>(null)
 const helpfulCount = computed(() => props.review.helpful + (vote.value === 'up' ? 1 : 0))
 
@@ -29,7 +26,6 @@ function toggleVote(type: 'up' | 'down') {
 
 <template>
   <article class="rounded-3xl bg-sidebar p-5">
-    <!-- verdict + date + menu -->
     <header class="flex items-start gap-3">
       <span
         class="grid size-10 shrink-0 place-items-center rounded-lg"
@@ -55,7 +51,6 @@ function toggleVote(type: 'up' | 'down') {
       </button>
     </header>
 
-    <!-- text -->
     <p
       class="mt-4 text-xs leading-relaxed text-neutral-100 md:text-sm"
       :class="isLong && !expanded && 'line-clamp-3'"
@@ -77,7 +72,6 @@ function toggleVote(type: 'up' | 'down') {
       />
     </button>
 
-    <!-- author + helpful -->
     <footer class="mt-4 flex items-end justify-between gap-4 border-t border-line pt-4">
       <div class="flex min-w-0 items-center gap-3">
         <UAvatar
