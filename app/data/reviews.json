@@ -1,0 +1,511 @@
+{
+  "the-last-of-us": {
+    "summary": {
+      "recommended": 187210,
+      "notRecommended": 16211,
+      "total": 203421
+    },
+    "reviews": [
+      {
+        "id": "the-last-of-us-1",
+        "recommended": true,
+        "postedAt": "2025-06-10",
+        "text": "The Last of Us delivers one of the most emotionally gripping stories I've ever experienced. The relationship between Joel and Ellie is beautifully written. Combat is intense, stealth feels rewarding, and the environments are hauntingly gorgeous. Definitely a must-play.",
+        "author": {
+          "name": "Stefan Arnold",
+          "avatar": "/images/stefan.webp"
+        },
+        "helpful": 34
+      },
+      {
+        "id": "the-last-of-us-2",
+        "recommended": false,
+        "postedAt": "2025-04-14",
+        "text": "I really wanted to enjoy this game, but the constant crashes and lack of optimization ruined the experience. The story had potential, but the gameplay felt repetitive and clunky. Hoping future patches improve things, but for now, I can't recommend it.",
+        "author": {
+          "name": "Liam V.",
+          "avatar": "/images/liam-v.webp"
+        },
+        "helpful": 22
+      },
+      {
+        "id": "the-last-of-us-3",
+        "recommended": true,
+        "postedAt": "2025-02-14",
+        "text": "The Last of Us offers one of the most emotionally gripping stories I've ever experienced in a game. Joel and Ellie's journey is intense, heartbreaking, and beautifully told, with strong voice acting and cinematic quality that pulls you in. Gameplay-wise, it's a perfect mix of stealth, action, and survival. A few slower sections here and there, but the payoff at the end is absolutely worth it.",
+        "author": {
+          "name": "Darren Cole",
+          "avatar": "/images/darren-cole.webp"
+        },
+        "helpful": 24
+      }
+    ]
+  },
+  "clair-obscur-expedition-33": {
+    "summary": {
+      "recommended": 122113,
+      "notRecommended": 6427,
+      "total": 128540
+    },
+    "reviews": [
+      {
+        "id": "clair-obscur-expedition-33-1",
+        "recommended": true,
+        "postedAt": "2025-08-21",
+        "text": "The combat is the best turn-based system I've played in years. Dodging and parrying keeps every fight tense, and the painted world is stunning from start to finish.",
+        "author": {
+          "name": "Maya Lopez"
+        },
+        "helpful": 58
+      },
+      {
+        "id": "clair-obscur-expedition-33-2",
+        "recommended": true,
+        "postedAt": "2025-07-03",
+        "text": "A story that actually made me emotional. The music, the cast and the final act are all unforgettable. Easy game of the year pick for me.",
+        "author": {
+          "name": "Kenji Sato"
+        },
+        "helpful": 41
+      },
+      {
+        "id": "clair-obscur-expedition-33-3",
+        "recommended": false,
+        "postedAt": "2025-06-14",
+        "text": "Great art, but the difficulty spikes are rough and some side areas feel empty. I wanted more guidance on how builds work before the later bosses.",
+        "author": {
+          "name": "Alex Chen"
+        },
+        "helpful": 12
+      }
+    ]
+  },
+  "peak": {
+    "summary": {
+      "recommended": 82188,
+      "notRecommended": 9132,
+      "total": 91320
+    },
+    "reviews": [
+      {
+        "id": "peak-1",
+        "recommended": true,
+        "postedAt": "2025-07-19",
+        "text": "Climbing with friends is chaos in the best way. Someone always forgets food, someone always falls, and we still laughed the whole time.",
+        "author": {
+          "name": "Rina Putri"
+        },
+        "helpful": 33
+      },
+      {
+        "id": "peak-2",
+        "recommended": true,
+        "postedAt": "2025-06-28",
+        "text": "Simple idea, very well done. The stamina and weather system keeps you thinking, and every run feels a little different.",
+        "author": {
+          "name": "Daniel Kim"
+        },
+        "helpful": 21
+      },
+      {
+        "id": "peak-3",
+        "recommended": false,
+        "postedAt": "2025-08-02",
+        "text": "Fun with friends, but playing alone gets lonely and repetitive pretty fast. Needs more content to stay interesting.",
+        "author": {
+          "name": "Sofia Rossi"
+        },
+        "helpful": 9
+      }
+    ]
+  },
+  "wuthering-waves": {
+    "summary": {
+      "recommended": 50225,
+      "notRecommended": 11025,
+      "total": 61250
+    },
+    "reviews": [
+      {
+        "id": "wuthering-waves-1",
+        "recommended": true,
+        "postedAt": "2025-05-11",
+        "text": "The combat feels fast and smooth, and the characters look amazing. Exploration is relaxing and the free pulls are generous enough.",
+        "author": {
+          "name": "Nadia Hassan"
+        },
+        "helpful": 27
+      },
+      {
+        "id": "wuthering-waves-2",
+        "recommended": true,
+        "postedAt": "2025-04-06",
+        "text": "Beautiful world and a soundtrack that deserves its own playlist. The story picks up after the first chapter.",
+        "author": {
+          "name": "Tomás Silva"
+        },
+        "helpful": 19
+      },
+      {
+        "id": "wuthering-waves-3",
+        "recommended": false,
+        "postedAt": "2025-03-22",
+        "text": "Good game, but the gacha rates and daily tasks start to feel like a chore. Hard to keep up if you only have an hour a day.",
+        "author": {
+          "name": "Chloe Martin"
+        },
+        "helpful": 14
+      }
+    ]
+  },
+  "uma-musume-pretty-derby": {
+    "summary": {
+      "recommended": 44548,
+      "notRecommended": 7862,
+      "total": 52410
+    },
+    "reviews": [
+      {
+        "id": "uma-musume-pretty-derby-1",
+        "recommended": true,
+        "postedAt": "2025-07-01",
+        "text": "Surprisingly deep. Planning training and watching your Uma win a race you almost lost is incredibly satisfying.",
+        "author": {
+          "name": "Arjun Mehta"
+        },
+        "helpful": 24
+      },
+      {
+        "id": "uma-musume-pretty-derby-2",
+        "recommended": true,
+        "postedAt": "2025-07-12",
+        "text": "Cute, funny and addictive. The story events are written with a lot of heart.",
+        "author": {
+          "name": "Maya Lopez"
+        },
+        "helpful": 16
+      },
+      {
+        "id": "uma-musume-pretty-derby-3",
+        "recommended": false,
+        "postedAt": "2025-08-05",
+        "text": "The training loop is fun at first, but it gets repetitive and the gacha system is tough on free players.",
+        "author": {
+          "name": "Daniel Kim"
+        },
+        "helpful": 8
+      }
+    ]
+  },
+  "hollow-knight": {
+    "summary": {
+      "recommended": 338688,
+      "notRecommended": 14112,
+      "total": 352800
+    },
+    "reviews": [
+      {
+        "id": "hollow-knight-1",
+        "recommended": true,
+        "postedAt": "2025-02-02",
+        "text": "A masterpiece. The world, the music and the bosses all fit together perfectly, and every secret feels earned.",
+        "author": {
+          "name": "Kenji Sato"
+        },
+        "helpful": 120
+      },
+      {
+        "id": "hollow-knight-2",
+        "recommended": true,
+        "postedAt": "2025-01-18",
+        "text": "Hard but fair. I died a lot, learned a lot, and loved every hour of it.",
+        "author": {
+          "name": "Sofia Rossi"
+        },
+        "helpful": 64
+      },
+      {
+        "id": "hollow-knight-3",
+        "recommended": false,
+        "postedAt": "2024-12-09",
+        "text": "I respect it, but getting lost without a map for hours wasn't fun for me. The difficulty spikes pushed me away.",
+        "author": {
+          "name": "Alex Chen"
+        },
+        "helpful": 17
+      }
+    ]
+  },
+  "deltarune": {
+    "summary": {
+      "recommended": 69093,
+      "notRecommended": 2137,
+      "total": 71230
+    },
+    "reviews": [
+      {
+        "id": "deltarune-1",
+        "recommended": true,
+        "postedAt": "2025-06-08",
+        "text": "Funny, weird and surprisingly touching. The music is incredible and the battles are creative.",
+        "author": {
+          "name": "Rina Putri"
+        },
+        "helpful": 45
+      },
+      {
+        "id": "deltarune-2",
+        "recommended": true,
+        "postedAt": "2025-06-20",
+        "text": "Each chapter surprises me more than the last. Can't wait to see where the story goes.",
+        "author": {
+          "name": "Tomás Silva"
+        },
+        "helpful": 31
+      },
+      {
+        "id": "deltarune-3",
+        "recommended": false,
+        "postedAt": "2025-05-27",
+        "text": "Great start, but the story is unfinished and some chapters feel short for how long you have to wait.",
+        "author": {
+          "name": "Nadia Hassan"
+        },
+        "helpful": 10
+      }
+    ]
+  },
+  "genshin-impact": {
+    "summary": {
+      "recommended": 628368,
+      "notRecommended": 177232,
+      "total": 805600
+    },
+    "reviews": [
+      {
+        "id": "genshin-impact-1",
+        "recommended": true,
+        "postedAt": "2025-04-30",
+        "text": "The world is gorgeous and exploring it never gets old. Free to play with a lot of content.",
+        "author": {
+          "name": "Chloe Martin"
+        },
+        "helpful": 52
+      },
+      {
+        "id": "genshin-impact-2",
+        "recommended": true,
+        "postedAt": "2025-03-15",
+        "text": "Great characters and music, and co-op makes it even more fun with friends.",
+        "author": {
+          "name": "Arjun Mehta"
+        },
+        "helpful": 29
+      },
+      {
+        "id": "genshin-impact-3",
+        "recommended": false,
+        "postedAt": "2025-02-24",
+        "text": "Fun early on, but the grind and resin limits make the late game feel slow. It needs to respect your time more.",
+        "author": {
+          "name": "Maya Lopez"
+        },
+        "helpful": 22
+      }
+    ]
+  },
+  "league-of-legends": {
+    "summary": {
+      "recommended": 352730,
+      "notRecommended": 151170,
+      "total": 503900
+    },
+    "reviews": [
+      {
+        "id": "league-of-legends-1",
+        "recommended": true,
+        "postedAt": "2025-05-19",
+        "text": "Still the most rewarding competitive game I know. Every match is a new puzzle, and climbing the ladder feels great.",
+        "author": {
+          "name": "Daniel Kim"
+        },
+        "helpful": 40
+      },
+      {
+        "id": "league-of-legends-2",
+        "recommended": true,
+        "postedAt": "2025-04-02",
+        "text": "Great champion variety and a friendly community when you play with friends.",
+        "author": {
+          "name": "Sofia Rossi"
+        },
+        "helpful": 18
+      },
+      {
+        "id": "league-of-legends-3",
+        "recommended": false,
+        "postedAt": "2025-03-08",
+        "text": "The learning curve is steep, and toxic teammates can ruin a match. Hard to recommend to new players.",
+        "author": {
+          "name": "Alex Chen"
+        },
+        "helpful": 35
+      }
+    ]
+  },
+  "subnautica": {
+    "summary": {
+      "recommended": 170582,
+      "notRecommended": 10888,
+      "total": 181470
+    },
+    "reviews": [
+      {
+        "id": "subnautica-1",
+        "recommended": true,
+        "postedAt": "2025-05-05",
+        "text": "Equal parts beautiful and terrifying. Diving deeper for the first time is something I'll never forget.",
+        "author": {
+          "name": "Kenji Sato"
+        },
+        "helpful": 77
+      },
+      {
+        "id": "subnautica-2",
+        "recommended": true,
+        "postedAt": "2025-04-11",
+        "text": "Crafting, exploring and survival all work together so well. The story reveals itself slowly in a great way.",
+        "author": {
+          "name": "Nadia Hassan"
+        },
+        "helpful": 43
+      },
+      {
+        "id": "subnautica-3",
+        "recommended": false,
+        "postedAt": "2025-03-01",
+        "text": "I love the world, but the sea creatures scare me too much to enjoy it. Not for the faint-hearted.",
+        "author": {
+          "name": "Chloe Martin"
+        },
+        "helpful": 11
+      }
+    ]
+  },
+  "game-5": {
+    "summary": {
+      "recommended": 8160,
+      "notRecommended": 2040,
+      "total": 10200
+    },
+    "reviews": [
+      {
+        "id": "game-5-1",
+        "recommended": true,
+        "postedAt": "2025-01-10",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer One"
+        },
+        "helpful": 5
+      },
+      {
+        "id": "game-5-2",
+        "recommended": false,
+        "postedAt": "2025-01-05",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer Two"
+        },
+        "helpful": 2
+      }
+    ]
+  },
+  "game-6": {
+    "summary": {
+      "recommended": 8160,
+      "notRecommended": 2040,
+      "total": 10200
+    },
+    "reviews": [
+      {
+        "id": "game-6-1",
+        "recommended": true,
+        "postedAt": "2025-01-10",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer One"
+        },
+        "helpful": 5
+      },
+      {
+        "id": "game-6-2",
+        "recommended": false,
+        "postedAt": "2025-01-05",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer Two"
+        },
+        "helpful": 2
+      }
+    ]
+  },
+  "review-2": {
+    "summary": {
+      "recommended": 8160,
+      "notRecommended": 2040,
+      "total": 10200
+    },
+    "reviews": [
+      {
+        "id": "review-2-1",
+        "recommended": true,
+        "postedAt": "2025-01-10",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer One"
+        },
+        "helpful": 5
+      },
+      {
+        "id": "review-2-2",
+        "recommended": false,
+        "postedAt": "2025-01-05",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer Two"
+        },
+        "helpful": 2
+      }
+    ]
+  },
+  "review-3": {
+    "summary": {
+      "recommended": 8160,
+      "notRecommended": 2040,
+      "total": 10200
+    },
+    "reviews": [
+      {
+        "id": "review-3-1",
+        "recommended": true,
+        "postedAt": "2025-01-10",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer One"
+        },
+        "helpful": 5
+      },
+      {
+        "id": "review-3-2",
+        "recommended": false,
+        "postedAt": "2025-01-05",
+        "text": "Placeholder review text. Replace me with a real review.",
+        "author": {
+          "name": "Reviewer Two"
+        },
+        "helpful": 2
+      }
+    ]
+  }
+}

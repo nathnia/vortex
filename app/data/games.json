@@ -1,0 +1,396 @@
+[
+  {
+    "slug": "the-last-of-us",
+    "title": "The Last Of Us",
+    "tags": [
+      "Action",
+      "Adventure",
+      "Story",
+      "Survival Horror",
+      "Post-apocalyptic",
+      "Third Person",
+      "Singleplayer"
+    ],
+    "platforms": [
+      "windows",
+      "playstation"
+    ],
+    "releaseDate": "Sep 2, 2022",
+    "rating": {
+      "recommended": true,
+      "reviews": "200k+ Reviews"
+    },
+    "poster": "/images/games/the-last-of-us/poster.webp",
+    "media": [
+      {
+        "type": "video",
+        "src": "/images/games/the-last-of-us/media-1.webp"
+      },
+      {
+        "type": "image",
+        "src": "/images/games/the-last-of-us/media-2.webp"
+      },
+      {
+        "type": "image",
+        "src": "/images/games/the-last-of-us/media-3.webp"
+      }
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Shooter"
+    ],
+    "developer": "Naughty Dog",
+    "publisher": "Sony Interactive Entertainment",
+    "ageRating": "17+ Mature",
+    "about": "The Last of Us is a critically acclaimed action-adventure game that takes players through a gripping post-apocalyptic world. Follow Joel and Ellie as they navigate dangerous environments, encounter hostile survivors, and form an unbreakable bond.",
+    "keyFeatures": [
+      "Cinematic storytelling with emotional depth",
+      "Dynamic stealth and combat system",
+      "Companion AI that enhances gameplay",
+      "Beautifully detailed post-apocalyptic visuals",
+      "Remastered visuals and 60fps performance on next-gen"
+    ],
+    "requirements": {
+      "minimum": {
+        "intro": "Requires a 64-bit processor and operating system",
+        "os": "Windows 10 (Version 1909 or Newer)",
+        "processor": "AMD Ryzen 5 1500X, Intel Core i7-4770K",
+        "memory": "16 GB RAM",
+        "graphics": "AMD Radeon RX 470 (4 GB), AMD Radeon RX 6500 XT (4 GB), NVIDIA GeForce GTX 970 (4 GB), NVIDIA GeForce GTX 1050 Ti (4 GB)",
+        "storage": "100 GB Available",
+        "notes": "SSD Recommended"
+      },
+      "recommended": {
+        "intro": "Requires a 64-bit processor and operating system",
+        "os": "Windows 10 (Version 1909 or Newer)",
+        "processor": "AMD Ryzen 5 3600X, Intel Core i7-8700",
+        "memory": "16 GB RAM",
+        "graphics": "AMD Radeon RX 5700 XT (8 GB), AMD Radeon RX 6600 XT (8 GB), NVIDIA GeForce RTX 2070 SUPER (8 GB), NVIDIA GeForce RTX 3060 (8 GB)",
+        "storage": "100 GB Available",
+        "notes": "SSD Recommended"
+      }
+    },
+    "stores": [
+      {
+        "type": "steam",
+        "url": "https://store.steampowered.com"
+      },
+      {
+        "type": "epic",
+        "url": "https://store.epicgames.com"
+      },
+      {
+        "type": "playstation",
+        "url": "https://store.playstation.com"
+      }
+    ]
+  },
+  {
+    "slug": "clair-obscur-expedition-33",
+    "title": "Clair Obscur : Expedition 33",
+    "tags": [
+      "Turn-based",
+      "RPG",
+      "Story",
+      "Fantasy",
+      "Singleplayer",
+      "Atmospheric"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Apr 24, 2025",
+    "rating": {
+      "recommended": true,
+      "reviews": "120k+ Reviews"
+    },
+    "poster": "/images/games/clair-obscur-expedition-33.webp",
+    "media": []
+  },
+  {
+    "slug": "peak",
+    "title": "Peak",
+    "tags": [
+      "Multiplayer",
+      "3D",
+      "Co-op",
+      "Survival",
+      "Climbing",
+      "Comedy"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jun 16, 2025",
+    "rating": {
+      "recommended": true,
+      "reviews": "90k+ Reviews"
+    },
+    "poster": "/images/games/peak.webp",
+    "media": []
+  },
+  {
+    "slug": "wuthering-waves",
+    "title": "Wuthering Waves",
+    "tags": [
+      "Combat",
+      "RPG",
+      "Story",
+      "Open World",
+      "Action",
+      "Gacha"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "May 22, 2024",
+    "rating": {
+      "recommended": true,
+      "reviews": "60k+ Reviews"
+    },
+    "poster": "/images/games/wuthering-waves.webp",
+    "media": []
+  },
+  {
+    "slug": "uma-musume-pretty-derby",
+    "title": "Uma Musume Pretty Derby",
+    "tags": [
+      "Anime",
+      "Racing",
+      "Gacha",
+      "Simulation",
+      "Sports",
+      "Casual"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jun 26, 2025",
+    "rating": {
+      "recommended": true,
+      "reviews": "50k+ Reviews"
+    },
+    "poster": "/images/games/uma-musume-pretty-derby.webp",
+    "media": []
+  },
+  {
+    "slug": "hollow-knight",
+    "title": "Hollow Knight",
+    "tags": [
+      "Metroidvania",
+      "Action",
+      "Platformer",
+      "Difficult",
+      "Atmospheric",
+      "Singleplayer"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Feb 24, 2017",
+    "rating": {
+      "recommended": true,
+      "reviews": "350k+ Reviews"
+    },
+    "poster": "/images/games/hollow-knight.webp",
+    "media": []
+  },
+  {
+    "slug": "deltarune",
+    "title": "Deltarune",
+    "tags": [
+      "RPG",
+      "Story",
+      "Comedy",
+      "Pixel Graphics",
+      "Indie",
+      "Singleplayer"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Oct 31, 2018",
+    "rating": {
+      "recommended": true,
+      "reviews": "70k+ Reviews"
+    },
+    "poster": "/images/games/deltarune.webp",
+    "media": []
+  },
+  {
+    "slug": "genshin-impact",
+    "title": "Genshin Impact",
+    "tags": [
+      "Open World",
+      "RPG",
+      "Gacha",
+      "Anime",
+      "Action",
+      "Co-op"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Sep 28, 2020",
+    "rating": {
+      "recommended": true,
+      "reviews": "800k+ Reviews"
+    },
+    "poster": "/images/games/genshin-impact.webp",
+    "media": []
+  },
+  {
+    "slug": "league-of-legends",
+    "title": "League of Legends",
+    "tags": [
+      "Moba",
+      "5v5",
+      "Competitive",
+      "Team-based",
+      "Strategy",
+      "Multiplayer",
+      "Free to Play"
+    ],
+    "platforms": [
+      "windows"
+    ],
+    "releaseDate": "Oct 27, 2009",
+    "rating": {
+      "recommended": true,
+      "reviews": "500k+ Reviews"
+    },
+    "poster": "/images/banners/league-of-legends-bg.webp",
+    "media": []
+  },
+  {
+    "slug": "subnautica",
+    "title": "Subnautica",
+    "tags": [
+      "Survival",
+      "Open World",
+      "Exploration",
+      "Underwater",
+      "Crafting",
+      "Singleplayer"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jan 23, 2018",
+    "rating": {
+      "recommended": true,
+      "reviews": "180k+ Reviews"
+    },
+    "poster": "/images/games/subnautica.webp",
+    "media": []
+  },
+  {
+    "slug": "game-5",
+    "title": "Game 5",
+    "tags": [
+      "Tag 1",
+      "Tag 2",
+      "Tag 3",
+      "Tag 4",
+      "Tag 5"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jan 1, 2025",
+    "rating": {
+      "recommended": true,
+      "reviews": "10k+ Reviews"
+    },
+    "poster": "/images/games/game-5.webp",
+    "media": []
+  },
+  {
+    "slug": "game-6",
+    "title": "Game 6",
+    "tags": [
+      "Tag 1",
+      "Tag 2",
+      "Tag 3",
+      "Tag 4",
+      "Tag 5"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jan 1, 2025",
+    "rating": {
+      "recommended": true,
+      "reviews": "10k+ Reviews"
+    },
+    "poster": "/images/games/game-6.webp",
+    "media": []
+  },
+  {
+    "slug": "review-2",
+    "title": "Game 2",
+    "tags": [
+      "Tag 1",
+      "Tag 2",
+      "Tag 3",
+      "Tag 4",
+      "Tag 5"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jan 1, 2025",
+    "rating": {
+      "recommended": true,
+      "reviews": "10k+ Reviews"
+    },
+    "poster": "/images/reviews/review-2.webp",
+    "media": []
+  },
+  {
+    "slug": "review-3",
+    "title": "Game 3",
+    "tags": [
+      "Tag 1",
+      "Tag 2",
+      "Tag 3",
+      "Tag 4",
+      "Tag 5"
+    ],
+    "platforms": [
+      "windows",
+      "playstation",
+      "xbox"
+    ],
+    "releaseDate": "Jan 1, 2025",
+    "rating": {
+      "recommended": false,
+      "reviews": "10k+ Reviews"
+    },
+    "poster": "/images/reviews/review-3.webp",
+    "media": []
+  }
+]

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Outfit', sans-serif;
+
+  /* Pigment Indigo scale, taken from the Figma token sheet.
+     500, 700 and 950 are NOT in the sheet: me made them up, design not use them. */
+  --color-pigment-50: #F3EAFB;
+  --color-pigment-100: #E0CDF7;
+  --color-pigment-200: #C29BEF;
+  --color-pigment-300: #A36AEF;
+  --color-pigment-400: #8747DC;
+  --color-pigment-500: #7335BD;
+  --color-pigment-600: #5D239F;
+  --color-pigment-700: #4C1983;
+  --color-pigment-800: #3B1166;
+  --color-pigment-900: #290847;
+  --color-pigment-950: #1A042F;
+
+  /* Secondary scale, based on #290847 (900) */
+  --color-accent-50: #F6F1FA;
+  --color-accent-100: #E8DCF3;
+  --color-accent-200: #D0B8E6;
+  --color-accent-300: #B38DD4;
+  --color-accent-400: #9460BE;
+  --color-accent-500: #763F9F;
+  --color-accent-600: #5E2E83;
+  --color-accent-700: #4A2169;
+  --color-accent-800: #38125F;
+  --color-accent-900: #290847;
+  --color-accent-950: #190430;
+
+  /* Vortex surfaces */
+  --color-surface: #1F1F1F;
+  --color-sidebar: #0A0A0A;
+  --color-card: #2C2C2C;
+  --color-line: #404040;
+  --color-form: #404040;
+  --color-tag: #616161;
+  --color-nav-active: #290847;
+}
+
+/* Main color = color-bg-button-primary-default (#C29BEF), also in dark mode */
+:root,
+.dark {
+  --ui-primary: var(--color-pigment-200);
+}
+
+body {
+  @apply bg-surface text-white antialiased;
+}
